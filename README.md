@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/images/jg-logo.png" alt="Logo" width="80" height="80">
-</p>
-
 <h1 align="center">CSST 102 — Basic Machine Learning</h1>
 
 <p align="center">
@@ -29,7 +25,7 @@
 
 This repository contains coursework, exercises, and projects for **CSST 102: Basic Machine Learning**. The portfolio demonstrates practical implementations of fundamental machine learning concepts including supervised learning, model evaluation, and regression analysis.
 
-### 🎯 Learning Objectives
+### Learning Objectives
 
 - Apply data preprocessing and feature engineering techniques
 - Implement classification and regression algorithms
@@ -40,17 +36,18 @@ This repository contains coursework, exercises, and projects for **CSST 102: Bas
 
 ## Coursework
 
-| Activity | Title | Description | Key Concepts |
-|----------|-------|-------------|--------------|
-| **MP-01** | [Iris Classification](coursework/machine-problem-01/) | Multi-class classification using Logistic Regression on the Iris dataset | Supervised Learning, Classification |
-| **MP-02** | [Model Evaluation](coursework/machine-problem-02/) | Comprehensive ML workflow with Logistic Regression on Breast Cancer dataset | Cross-Validation, Confusion Matrix, Learning Curves |
-| **Exercise** | [California Housing](coursework/california-housing/) | Regression analysis comparing Linear Regression and Decision Tree models | Regression, Feature Scaling, MSE/R² |
+| Activity     | Title                                                 | Description                                                                 | Key Concepts                                        |
+| ------------ | ----------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------- |
+| **MP-01**    | [Iris Classification](coursework/machine-problem-01/) | Multi-class classification using Logistic Regression on the Iris dataset    | Supervised Learning, Classification                 |
+| **MP-02**    | [Model Evaluation](coursework/machine-problem-02/)    | Comprehensive ML workflow with Logistic Regression on Breast Cancer dataset | Cross-Validation, Confusion Matrix, Learning Curves |
+| **Exercise** | [California Housing](coursework/california-housing/)  | Regression analysis comparing Linear Regression and Decision Tree models    | Regression, Feature Scaling, MSE/R²                 |
 
 ---
 
 ## Technologies
 
 ### Machine Learning Stack
+
 - **Python 3.x** — Primary programming language
 - **Scikit-learn** — Machine learning algorithms and utilities
 - **Pandas** — Data manipulation and analysis
@@ -58,6 +55,7 @@ This repository contains coursework, exercises, and projects for **CSST 102: Bas
 - **Matplotlib / Seaborn** — Data visualization
 
 ### Web Portfolio
+
 - **HTML5 / CSS3** — Structure and styling
 - **Tailwind CSS** — Utility-first CSS framework
 - **JavaScript** — Interactive components
@@ -75,12 +73,14 @@ pip install numpy pandas matplotlib seaborn scikit-learn jupyter
 ### Running Notebooks
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/emperuna/CSST102-3A-AY2526.git
    cd CSST102-3A-AY2526
    ```
 
 2. Launch Jupyter:
+
    ```bash
    jupyter notebook
    ```
@@ -128,14 +128,19 @@ CSST102-3A-AY2526/
   <tr>
     <td align="center">
       <strong>Jeremy M. Garin</strong><br>
-      BSCS — 3A<br>
-      Academic Year 2025-2026
+      BSCS — 3A • Academic Year 2025-2026<br><br>
+      <a href="https://github.com/emperuna">
+        <img src="https://img.shields.io/badge/GitHub-emperuna-181717?style=for-the-badge&logo=github" alt="GitHub">
+      </a>
+      <a href="https://emperuna.github.io/CSST102-3A-AY2526/">
+        <img src="https://img.shields.io/badge/Portfolio-Live_Demo-10b981?style=for-the-badge&logo=github-pages" alt="Portfolio">
+      </a>
     </td>
   </tr>
 </table>
 
 ---
 
-<p align="center">
-  <sub>Built with modern web technologies • Machine Learning Portfolio</sub>
-</p>
+## License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
