@@ -1,0 +1,35 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Dependencies
+node_modules/
+
+# Build
+dist/
+build/
+*.log
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Python (if any notebooks are run locally)
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.pkl
+
+# Jupyter
+.jupyter/
+
+# Temporary files
+*.tmp
+*.temp
