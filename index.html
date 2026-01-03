@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CSST102-3A Portfolio - Basic Machine Learning course activities and projects"
+    />
+    <meta name="theme-color" content="#030712" />
+    <title>CSST102-3A | Machine Learning Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CSST102-3A | Machine Learning Portfolio" />
+    <meta property="og:description" content="A collection of coursework exploring supervised learning, neural networks, data preprocessing, and model evaluation techniques." />
+    <meta property="og:image" content="assets/images/ml-hero-illustration.png" />
+    <meta property="og:url" content="https://emperuna.github.io/CSST102-3A-AY2526/" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CSST102-3A | Machine Learning Portfolio" />
+    <meta name="twitter:description" content="Exploring supervised learning, neural networks, and model evaluation in Python." />
+    <meta name="twitter:image" content="assets/images/ml-hero-illustration.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind.config.js"></script>
+    
+    <!-- Theme Styles -->
+    <link rel="stylesheet" href="assets/css/theme.css">
+  </head>
+  <body class="font-sans antialiased text-gray-100 bg-dark-900">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-emerald-500 focus:text-white focus:rounded-lg focus:font-semibold">Skip to main content</a>
+
+    <!-- Animated Background -->
+    <div class="fixed inset-0 animated-grid pointer-events-none" aria-hidden="true"></div>
+    <div class="fixed inset-0 hero-glow pointer-events-none" aria-hidden="true"></div>
+
+    <!-- Navigation (injected by components.js) -->
+    <div id="navbar-slot"></div>
+
+    <!-- Hero Section -->
+    <section
+      id="main-content"
+      class="relative min-h-screen flex items-center pt-20 pb-32 overflow-hidden"
+      role="main"
+    >
+      <!-- Decorative Elements -->
+      <div
+        class="absolute top-1/4 left-10 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl float-element"
+      ></div>
+      <div
+        class="absolute bottom-1/4 right-10 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl float-element"
+      ></div>
+
+      <div class="max-w-6xl mx-auto px-6 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div class="opacity-0 animate-fade-in-up">
+            <!-- Badge -->
+            <div
+              class="inline-flex items-center gap-2 px-4 py-2 glass rounded-full mb-8"
+            >
+              <span class="flex h-2 w-2 relative">
+                <span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"
+                ></span>
+              </span>
+              <span class="text-sm font-medium text-gray-300"
+                >BSCS 3A — Academic Year 2025-2026</span
+              >
+            </div>
+
+            <!-- Main Heading -->
+            <h1
+              class="text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight text-balance mb-6 leading-[1.1]"
+            >
+              Basic
+              <span class="text-gradient"> Machine</span>
+              <span class="block mt-2">Learning</span>
+              <span class="block mt-2 text-emerald-400">Fundamentals</span>
+            </h1>
+
+            <p class="text-xl text-gray-400 leading-relaxed mb-10 max-w-xl">
+              A collection of coursework exploring
+              <span class="text-emerald-400">supervised learning</span>,
+              <span class="text-cyan-400">neural networks</span>, data preprocessing,
+              and model evaluation techniques.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="activities.html"
+                class="group inline-flex items-center gap-3 px-8 py-4 text-base font-semibold text-white bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-xl shadow-2xl shadow-emerald-500/30 hover:shadow-emerald-500/50 hover:scale-105 transition-all duration-300"
+              >
+                Explore Activities
+                <svg
+                  class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </a>
+              <a
+                href="about.html"
+                class="inline-flex items-center gap-2 px-8 py-4 text-base font-semibold text-gray-300 glass rounded-xl hover:bg-white/10 hover:text-white transition-all duration-300"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                Learn More
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Visual - ML Illustration -->
+          <div
+            class="hidden lg:flex items-center justify-center relative opacity-0 animate-fade-in-up stagger-2"
+          >
+            <!-- Decorative rings -->
+            <div
+              class="absolute w-80 h-80 rounded-full border border-emerald-500/20 animate-pulse-glow"
+            ></div>
+            <div
+              class="absolute w-96 h-96 rounded-full border border-cyan-500/10"
+            ></div>
+
+            <!-- ML Symbols Floating -->
+            <div
+              class="absolute -top-8 -left-8 glass-card px-4 py-2 float-element"
+            >
+              <code class="font-mono text-emerald-400 text-lg">σ(Wx + b)</code>
+            </div>
+            <div
+              class="absolute top-1/4 -right-12 glass-card px-4 py-2 float-element"
+              style="animation-delay: -2s"
+            >
+              <code class="font-mono text-cyan-400 text-lg">∇Loss</code>
+            </div>
+            <div
+              class="absolute -bottom-4 left-1/4 glass-card px-4 py-2 float-element"
+              style="animation-delay: -4s"
+            >
+              <code class="font-mono text-violet-400 text-lg">y = f(x)</code>
+            </div>
+
+            <!-- Main ML Illustration -->
+            <div
+              class="relative w-80 h-80 rounded-3xl overflow-hidden glow-emerald"
+            >
+              <img 
+                src="assets/images/ml-hero-illustration.png" 
+                alt="Machine Learning neural network visualization with data streams and interconnected nodes"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Activities -->
+    <section class="py-32 relative">
+      <div class="max-w-6xl mx-auto px-6">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+          <span
+            class="inline-block px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-emerald-400 glass rounded-full mb-4"
+          >
+            Coursework
+          </span>
+          <h2 class="text-4xl lg:text-5xl font-bold tracking-tight mb-6">
+            Featured <span class="text-gradient">Activities</span>
+          </h2>
+          <p class="text-gray-400 max-w-2xl mx-auto text-lg">
+            Explore coursework demonstrating Machine Learning concepts through practical
+            implementations.
+          </p>
+        </div>
+
+        <!-- Activity Cards Grid -->
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Iris Classification Card -->
+          <article class="activity-card glass-card p-8 group">
+            <div class="flex items-start gap-5 mb-6">
+              <div
+                class="card-icon w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0 transition-all duration-300 overflow-hidden"
+              >
+                <img 
+                  src="assets/images/classification-icon.png" 
+                  alt="Classification icon" 
+                  class="w-full h-full object-cover rounded-2xl"
+                />
+              </div>
+              <div>
+                <span
+                  class="inline-block px-3 py-1 text-xs font-semibold text-emerald-400 bg-emerald-500/10 rounded-lg mb-2"
+                >
+                  Machine Problem 01
+                </span>
+                <h3
+                  class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors"
+                >
+                  Iris Classification
+                </h3>
+              </div>
+            </div>
+            <p class="text-gray-400 mb-6 leading-relaxed">
+              Introduction to supervised learning using Logistic Regression on the 
+              classic Iris dataset for multi-class classification.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span
+                class="px-3 py-1.5 text-xs font-medium text-gray-400 bg-white/5 rounded-lg border border-white/5"
+                >Python</span
+              >
+              <span
+                class="px-3 py-1.5 text-xs font-medium text-gray-400 bg-white/5 rounded-lg border border-white/5"
+                >Scikit-learn</span
+              >
+              <span
+                class="px-3 py-1.5 text-xs font-medium text-gray-400 bg-white/5 rounded-lg border border-white/5"
+                >Classification</span
+              >
+            </div>
+            <a
+              href="activities/mp-01.html"
+              class="inline-flex items-center gap-2 text-sm font-semibold text-emerald-400 hover:text-cyan-400 transition-colors group/link"
+            >
+              View Details
+              <svg
+                class="w-4 h-4 group-hover/link:translate-x-1 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </a>
+          </article>
+
+          <!-- Model Evaluation Card -->
+          <article class="activity-card glass-card p-8 group">
+            <div class="flex items-start gap-5 mb-6">
+              <div
+                class="card-icon w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0 transition-all duration-300 overflow-hidden"
+              >
+                <img 
+                  src="assets/images/model-evaluation-icon.png" 
+                  alt="Model evaluation icon" 
+                  class="w-full h-full object-cover rounded-2xl"
+                />
+              </div>
+              <div>
+                <span
+                  class="inline-block px-3 py-1 text-xs font-semibold text-cyan-400 bg-cyan-500/10 rounded-lg mb-2"
+                >
+                  Machine Problem 02
+                </span>
+                <h3
+                  class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors"
+                >
+                  Model Evaluation
+                </h3>
+              </div>
+            </div>
+            <p class="text-gray-400 mb-6 leading-relaxed">
+              Evaluating Logistic Regression on the Breast Cancer dataset with 
+              confusion matrix, learning curves, and 5-fold cross-validation.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span
+                class="px-3 py-1.5 text-xs font-medium text-gray-400 bg-white/5 rounded-lg border border-white/5"
+                >Python</span
+              >
+              <span
+                class="px-3 py-1.5 text-xs font-medium text-gray-400 bg-white/5 rounded-lg border border-white/5"
+                >Cross-Validation</span
+              >
+              <span
+                class="px-3 py-1.5 text-xs font-medium text-gray-400 bg-white/5 rounded-lg border border-white/5"
+                >Evaluation</span
+              >
+              <span
+                class="px-3 py-1.5 text-xs font-medium text-gray-400 bg-white/5 rounded-lg border border-white/5"
+                >Model Evaluation</span
+              >
+            </div>
+            <a
+              href="activities/mp-02.html"
+              class="inline-flex items-center gap-2 text-sm font-semibold text-cyan-400 hover:text-emerald-400 transition-colors group/link"
+            >
+              View Details
+              <svg
+                class="w-4 h-4 group-hover/link:translate-x-1 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </a>
+          </article>
+        </div>
+
+        <!-- View All CTA -->
+        <div class="text-center mt-12">
+          <a
+            href="activities.html"
+            class="inline-flex items-center gap-3 px-8 py-4 text-base font-semibold text-white bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-xl shadow-2xl shadow-emerald-500/30 hover:shadow-emerald-500/50 hover:scale-105 transition-all duration-300"
+          >
+            View All Activities
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 7l5 5m0 0l-5 5m5-5H6"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-24 relative">
+      <!-- Decorative line -->
+      <div
+        class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-emerald-500/50 to-transparent"
+      ></div>
+
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="glass-card rounded-3xl p-12">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="group">
+              <div
+                class="text-5xl lg:text-6xl font-extrabold text-gradient mb-2"
+                data-count="3"
+              >
+                3
+              </div>
+              <div
+                class="text-sm text-gray-400 font-medium uppercase tracking-wider"
+              >
+                Activities
+              </div>
+            </div>
+            <div class="group">
+              <div
+                class="text-5xl lg:text-6xl font-extrabold text-gradient mb-2"
+                data-count="2"
+              >
+                2
+              </div>
+              <div
+                class="text-sm text-gray-400 font-medium uppercase tracking-wider"
+              >
+                Machine Problems
+              </div>
+            </div>
+            <div class="group">
+              <div
+                class="text-5xl lg:text-6xl font-extrabold text-gradient mb-2"
+                data-count="1"
+              >
+                1
+              </div>
+              <div
+                class="text-sm text-gray-400 font-medium uppercase tracking-wider"
+              >
+                Exercise
+              </div>
+            </div>
+            <div class="group">
+              <div
+                class="text-5xl lg:text-6xl font-extrabold text-gradient mb-2"
+              >
+                3+
+              </div>
+              <div
+                class="text-sm text-gray-400 font-medium uppercase tracking-wider"
+              >
+                ML Algorithms
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Decorative line -->
+      <div
+        class="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent"
+      ></div>
+    </section>
+
+    <!-- Course Topics Preview -->
+    <section class="py-24">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <span
+              class="inline-block px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-cyan-400 glass rounded-full mb-4"
+            >
+              What You'll Find
+            </span>
+            <h2 class="text-3xl lg:text-4xl font-bold tracking-tight mb-6">
+              Topics <span class="text-gradient">Covered</span>
+            </h2>
+            <p class="text-gray-400 text-lg mb-8">
+              This portfolio documents comprehensive coursework covering
+              essential Machine Learning concepts and techniques.
+            </p>
+
+            <ul class="space-y-4">
+              <li class="flex items-center gap-4">
+                <div
+                  class="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center"
+                >
+                  <svg
+                    class="w-5 h-5 text-emerald-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </div>
+                <span class="text-gray-300"
+                  >Data Preprocessing & Feature Engineering</span
+                >
+              </li>
+              <li class="flex items-center gap-4">
+                <div
+                  class="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center"
+                >
+                  <svg
+                    class="w-5 h-5 text-cyan-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </div>
+                <span class="text-gray-300"
+                  >Supervised Learning (Classification & Regression)</span
+                >
+              </li>
+              <li class="flex items-center gap-4">
+                <div
+                  class="w-10 h-10 rounded-xl bg-violet-500/10 flex items-center justify-center"
+                >
+                  <svg
+                    class="w-5 h-5 text-violet-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </div>
+                <span class="text-gray-300">Neural Networks & Deep Learning Basics</span>
+              </li>
+              <li class="flex items-center gap-4">
+                <div
+                  class="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center"
+                >
+                  <svg
+                    class="w-5 h-5 text-amber-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </div>
+                <span class="text-gray-300"
+                  >Model Evaluation & Cross-Validation</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Terminal-style code preview -->
+          <div class="glass-card rounded-2xl overflow-hidden">
+            <div
+              class="flex items-center gap-2 px-4 py-3 border-b border-white/5"
+            >
+              <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+              <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+              <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+              <span class="ml-2 text-xs text-gray-500 font-mono"
+                >ml_model.py</span
+              >
+            </div>
+            <pre
+              class="p-6 text-sm font-mono overflow-x-auto"
+            ><code class="text-gray-300"><span class="text-violet-400">from</span> sklearn.model_selection <span class="text-violet-400">import</span> train_test_split
+<span class="text-violet-400">from</span> sklearn.preprocessing <span class="text-violet-400">import</span> StandardScaler
+<span class="text-violet-400">from</span> sklearn.neural_network <span class="text-violet-400">import</span> MLPClassifier
+
+<span class="text-gray-500"># Prepare data</span>
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=<span class="text-amber-400">0.2</span>, random_state=<span class="text-amber-400">42</span>
+)
+
+<span class="text-gray-500"># Scale features</span>
+scaler = StandardScaler()
+X_train_scaled = scaler.fit_transform(X_train)
+
+<span class="text-gray-500"># Build neural network</span>
+model = MLPClassifier(
+    hidden_layer_sizes=(<span class="text-amber-400">128</span>, <span class="text-amber-400">64</span>),
+    activation=<span class="text-emerald-400">'relu'</span>,
+    max_iter=<span class="text-amber-400">500</span>
+)
+model.fit(X_train_scaled, y_train)</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer (injected by components.js) -->
+    <div id="footer-slot"></div>
+
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
